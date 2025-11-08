@@ -1,6 +1,7 @@
 .equ UART_BASE, 0x10000000
 
 .section .text
+.globl _start
 _start:
   la a0, helloworld   # Load address of string
   li a1, UART_BASE    # Load uart tx base address
